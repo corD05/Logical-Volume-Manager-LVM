@@ -4,7 +4,7 @@
 show_menu() {
     echo -e "\e[32mManajemen Physical Volume (PV)\e[0m"
     #echo "Pembuatan Physical Volume (PV)"
-    echo "-------------------------------"
+    echo "-------------------------------------"
     echo "1. Tampilkan semua disk yang tersedia"
     echo "2. Buat PV baru"
     echo "3. Tampilkan semua PV"
@@ -14,7 +14,6 @@ show_menu() {
 # Fungsi untuk menampilkan semua disk yang tersedia
 show_available_disks() {
 lsblk
-
 }
 
 # Fungsi untuk membuat PV baru
@@ -43,7 +42,7 @@ while true; do
             show_all_pv
             ;;
         4)
-            echo "==============================================="
+            echo "================================================"
             exit
             ;;
         *)
