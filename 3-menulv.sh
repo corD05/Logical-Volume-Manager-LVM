@@ -3,7 +3,7 @@
 # Fungsi untuk menampilkan menu
 show_menu() {
     echo -e "\e[32mManajemen Logical Volume (LV)\e[0m"
-    echo "-------------------------------"
+    echo "-------------------------------------------"
     echo "1. Menampilkan semua Volume Group (VG)"
     echo "2. Membuat LV baru, mounting, dan input fstab"
     echo "3. Menampilkan semua LV"
