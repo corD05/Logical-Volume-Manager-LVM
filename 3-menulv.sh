@@ -18,9 +18,6 @@ show_all_vg() {
 
 # Fungsi untuk membuat LV baru, mounting, dan input fstab
 create_new_lv_and_mount() {
-    #read -p "Masukkan nama Volume Group (VG) yang akan digunakan: " vg_name
-    #read -p "Masukkan nama LV baru: " lv_name
-    #read -p "Masukkan ukuran LV (misal: 1G, 100M, dll): " lv_size
 
     # Membaca nama VG dari pengguna
     read -p "Masukkan nama Volume Group (VG) yang akan digunakan: " vg_name
@@ -82,7 +79,6 @@ create_new_lv_and_mount() {
     mount "/dev/$vg_name/$lv_name" "$mount_point"
 
     # Input ke file sistem fstab
-    #echo "/dev/$vg_name/$lv_name    $mount_point    $fs_type    defaults    0 0" | sudo tee -a /etc/fstab
     echo "/dev/mapper/$vg_name-$lv_name    $mount_point    $fs_type    defaults    0 0" | sudo tee -a /etc/fstab
 }
 
