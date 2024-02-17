@@ -2,7 +2,7 @@
 
 # Fungsi untuk menampilkan menu
 show_menu() {
-    echo -e "\e[31m####### === LOGICAL VOLUME MANAGER (LVM)=== ########\e[0m"
+    echo -e "\e[31m####### === LOGICAL VOLUME MANAGER (LVM) === ########\e[0m"
     #echo "Pilih menu LOGICAL VOLUME MANAGER (LVM):"
     echo "1. Menu PV"
     echo "2. Menu VG"
